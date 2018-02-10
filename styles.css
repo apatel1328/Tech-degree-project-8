@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url(svgs/background.svg) #edeff0;
+
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #39ADD1;
+  font-weight: bold;
+}
+
+header nav ul li .st0 {
+  fill: #39ADD1;;
+}
+
+header nav ul li:hover, header nav ul li:hover .st0 {
+  color: red;
+  fill: red;
+
+}
+
+header nav ul li .svg {
+  width: 20%;
+  padding-right:10px;
+  vertical-align: middle;
+}
+
+
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+.logo:hover {
+  animation: scale-tilt .8s;
+}
+
+.logoHeadline {
+    display: none;
+  }
+  
+.logo-slogan {
+    display: inline-block;
+    color: #E9AA82;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+.corgi-column {
+    display: inline-block;
+    margin: 2%;
+    text-align: center;
+}
+
+.corgi-column p {
+  text-align: center;
+  margin-top: 0;
+  margin-left: -25px;
+  color: #CD853F;
+  font-weight: 500;
+}
+
+.corgi-sable {
+  color: #CD853F;
+}
+
+.corgi-fawn {
+  color:#F5DEB3;
+}
+
+.corgi-red {
+  color:#A0522D;
+}
+
+.corgi-stone {
+  color:#52595f;
+}
+
+
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+
+
+@keyframes scale-tilt{
+  
+  40% {
+    transform: scale(1.1);
+  
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+}
+
+@keyframes hide {
+
+  40% {
+    transform: scale(.5);
+  }
+
+  80% {
+    transform: scale(.1);
+  }
+
+  90% {
+    display: none;
+  }
+}
+
+
+@media (min-width: 425px) {
+  
+  .logo-slogan {
+    display: none;
+  }
+
+  .logoHeadline {
+    display: block;
+  }
+
+}
